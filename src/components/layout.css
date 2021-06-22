@@ -62,3 +62,7 @@ h6 {
   background-color: var(--CoffeeText);
   color: var(--Capuccino);
 }
+
+.text-expresso {
+  color: var(--Expresso);
+}

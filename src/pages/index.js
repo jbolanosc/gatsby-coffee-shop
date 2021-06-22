@@ -5,6 +5,8 @@ import Seo from "../components/seo"
 import { graphql } from "gatsby"
 import LandingSection from "../components/Globals/LandingSection"
 import Menu from "../components/Home/Menu"
+import Products from "../components/Home/Products"
+import Contact from "../components/Home/Contact"
 import "../components/layout.css"
 
 const IndexPage = ({ data }) => (
@@ -17,6 +19,8 @@ const IndexPage = ({ data }) => (
       styleClass="default-background"
     />
     <Menu items={data.menu} />
+    <Products />
+    <Contact />
   </Layout>
 )
 
