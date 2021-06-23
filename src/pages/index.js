@@ -43,7 +43,7 @@ export const query = graphql`
           }
           category
           image {
-            gatsbyImageData(width: 100, height: 100)
+            gatsbyImageData(width: 120, height: 100)
           }
           price
         }

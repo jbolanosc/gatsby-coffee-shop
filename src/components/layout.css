@@ -23,6 +23,7 @@ h6 {
 
 .btn-Capuccino {
   color: var(--CoffeeBrown);
+  background-color: var(--Capuccino);
   border-color: var(--CoffeeBrown);
 }
 

@@ -30,7 +30,6 @@ export default function Menu(props) {
   const handleCategorieChange = category => {
     let tempItems = [...coffeeItems]
 
-    console.log("temp items", tempItems)
     if (category === "all") {
       setItems(tempItems)
     } else {
@@ -73,21 +72,27 @@ export default function Menu(props) {
                   return (
                     <div
                       key={node.id}
-                      className="bg-light col-11 col-md-6 my-3 d-flex mx-auto"
+                      className="col-11 col-md-6 my-3 d-flex mx-auto m-2"
                     >
-                      <div>
-                        <GatsbyImage image={image} alt={node.title} />
+                      <div className="w-50 h-100">
+                        <GatsbyImage
+                          className="w-100 h-100"
+                          image={image}
+                          alt={node.title}
+                        />
                       </div>
                       <div className="flex-grow-1 px-3">
-                        <div className="d-flex justify-content-between">
+                        <div className="d-flex justify-content-between align-items-center">
                           <h6 className="mb-0">
                             <small>{node.title}</small>
                           </h6>
                           <h6 className="mb-0 text-expresso">
-                            <small>${node.price}</small>
+                            <small className="font-weight-bold">
+                              ${node.price}
+                            </small>
                           </h6>
                         </div>
-                        <p className="text-justify">
+                        <p className="text-justify mx-auto mt-3">
                           <small>{node.description.description}</small>
                         </p>
                       </div>

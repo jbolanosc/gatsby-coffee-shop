@@ -10,10 +10,10 @@ export default function LandingSection({
 }) {
   return (
     <BackgroundImage className={styleClass} fluid={img}>
-      <h1 className="title text-uppercase text-white display-2 text-center font-weight-bold">
+      <h1 className="title text-uppercase text-white display-1 text-center font-weight-bold">
         {title}
       </h1>
-      <p className="display-5 text-center text-white text-uppercase font-weight-bold">
+      <p className="display-4 text-center text-white text-uppercase font-weight-bold">
         {description}
       </p>
       {children}

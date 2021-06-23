@@ -32,6 +32,9 @@ const query = graphql`
           title
           price
           image {
+            fluid {
+              src
+            }
             gatsbyImageData(width: 300, height: 300)
           }
         }
